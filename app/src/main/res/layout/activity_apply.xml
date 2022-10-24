@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ApplyActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar3"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/purple_700"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/Theme.AppCompat.Light"
+        android:elevation="4dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:padding="12dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple_500"
+            android:textSize="16sp"
+            android:text="Ask for Leave"/>
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="wrap_content"
+            android:background="@color/purple_700"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"/>
+        <TextView
+            android:id="@+id/leaveID_txt"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple_500"
+            android:text=""/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:text="Select Department"/>
+
+        <Spinner
+            android:id="@+id/spinner_supervisor"
+            android:layout_width="324dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"></Spinner>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="wrap_content"
+            android:background="@color/purple_700"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/dateFrom"
+            android:layout_width="328dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="#d4d4d4"
+            android:hint="Select Date From "
+            android:padding="15dp"
+            android:textColor="#897"
+            android:textColorHint="#090"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="wrap_content"
+            android:background="@color/purple_700"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"/>
+        <EditText
+            android:id="@+id/dateTo"
+            android:layout_width="328dp"
+            android:layout_height="wrap_content"
+            android:background="#d4d4d4"
+            android:hint="Select Date To "
+            android:padding="15dp"
+            android:textColor="#897"
+            android:textColorHint="#090"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/submit_button_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:background="@drawable/bg_color"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
